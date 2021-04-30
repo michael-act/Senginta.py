@@ -1,0 +1,1 @@
+BAIDU_URLS = {'BAIDU_SEARCH': 'https://www.baidu.com/s?wd={}&pn={}'}
