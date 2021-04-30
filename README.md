@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Senginta.png"></img>
+    <img src="Senginta.jpg"></img>
 </p>
 
 <p align="center">
