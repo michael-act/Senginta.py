@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="senginta",                        # This is the name of the package
-    version="0.0.1",                        # The initial release version
+    version="0.0.7",                        # The initial release version
     author="Michael Abraham Chan Tulenan",  # Full name of the author
     author_email="michael.4ct@gmail.com", 
     description="All in one Search Engine for used by API or Python Module (Unofficial)",
@@ -16,7 +16,7 @@ setuptools.setup(
     packages=LIST_PACKAGES,                 # List of all python modules to be installed
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: MIT License",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],                                      # Information to filter the project on PyPi website
     python_requires='>=3.8',                # Minimum version requirement of the package
