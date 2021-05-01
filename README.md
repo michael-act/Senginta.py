@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    [How to: Video](https://youtu.be/-B3CO467Kzo)
+    <a href="https://youtu.be/-B3CO467Kzo"> How to use: Video</a>
 </p>
 
 **`Documentation`** |
