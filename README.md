@@ -6,6 +6,10 @@
     All in one Search Engine Scrapper for used by API or Python Module.
 </p>
 
+<p align="center">
+    [How to: Video](https://youtu.be/-B3CO467Kzo)
+</p>
+
 **`Documentation`** |
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)]() |
