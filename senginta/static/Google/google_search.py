@@ -87,7 +87,7 @@ class GSearch(Search):
 		Return: description -> list, description of all results.
 		Example: 
 		>>> search_spider = GSearch('study from home')
-		>>> print(search_spider.get_title())
+		>>> print(search_spider.get_desc())
 		'''
 
 		if self.descs:
