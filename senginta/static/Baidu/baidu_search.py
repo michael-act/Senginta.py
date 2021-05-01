@@ -2,6 +2,7 @@ from ..search import Search
 from .settings import BAIDU_URLS
 
 from bs4 import BeautifulSoup
+
 import re
 
 class BASearch(Search):

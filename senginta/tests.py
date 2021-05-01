@@ -27,9 +27,8 @@ from static.Baidu import BASearch
 # GoogleVideo = GVideo('Pegipegi', 1, 3)
 # print(GoogleVideo.res_to_json())
 
-# BaiduSearch = BASearch('Gojek', 1, 3)
+# BaiduSearch = BASearch('Gojek', 1, 13)
 # print(BaiduSearch.res_to_json())
-
 
 ###################################################################################
 # If when you use Google Scrapper is not give anything, you must try
