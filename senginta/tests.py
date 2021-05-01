@@ -12,8 +12,8 @@ from static.Google import GSearch, GNews, GBooks, GShop, GVideo, GScholar
 from static.Baidu import BASearch
 
 
-# GoogleSearch = GSearch('Tokopedia')
-# print(GoogleSearch.res_to_json())
+GoogleSearch = GSearch('Tokopedia')
+print(GoogleSearch.res_to_json())
 
 # GoogleBooks = GBooks('Python Programming', 1, 3)
 # print(GoogleBooks.res_to_json())
