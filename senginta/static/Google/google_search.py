@@ -75,7 +75,7 @@ class GSearch(Search):
 			if res:
 				title = res.find('h3')
 				if title:
-					self.titles.append(title.text)
+					self.titles.append(u'%s'%title.text.replace(u"\u2022", "*").encode('ascii','ignore').decode('utf-8'))
 					continue
 			self.titles.append(None)
 
@@ -96,7 +96,7 @@ class GSearch(Search):
 		descs_tmp = self.get_main('div', {'class': lambda e: len(str(e).split()) == 3}, 
 								  findAll=True)
 
-		self.descs.extend([res[2].text if len(res) >= 3 else None for res in descs_tmp])
+		self.descs.extend([u'%s'%res[2].text.replace(u"\u2022", "*").encode('ascii','ignore').decode('utf-8') if len(res) >= 3 else None for res in descs_tmp])
 		return self.descs
 
 
