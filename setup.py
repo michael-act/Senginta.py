@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="senginta",                        # This is the name of the package
-    version="0.0.7",                        # The initial release version
+    version="0.0.1",                        # The initial release version
     author="Michael Abraham Chan Tulenan",  # Full name of the author
     author_email="michael.4ct@gmail.com", 
     description="All in one Search Engine for used by API or Python Module (Unofficial)",
