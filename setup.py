@@ -21,5 +21,10 @@ setuptools.setup(
     ],                                      # Information to filter the project on PyPi website
     python_requires='>=3.8',                # Minimum version requirement of the package
     py_modules=["senginta"],                # Name of the python package
-    install_requires=['beautifulsoup4']     # Install other dependencies if any
+    install_requires=[
+        'beautifulsoup4', 
+        'requests', 
+        'json', 
+        'urllib3'
+    ]     # Install other dependencies if any
 )

@@ -28,7 +28,7 @@ class Search:
 		while page_num <= max_page_num:
 			search_url = url.format(self.search_word, page_num)
 			page = requests.get(search_url)
-			result.update({num: page.content})
+			result.update({num: u'{}'.format(page.content)})
 			page_num += 10
 			num += 1
 

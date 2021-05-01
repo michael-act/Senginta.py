@@ -2,6 +2,7 @@ from ..search import Search
 from .settings import GOOGLE_URLS
 
 from bs4 import BeautifulSoup
+from urllib.parse import unquote
 import re
 
 class GSearch(Search):
@@ -141,7 +142,8 @@ class GSearch(Search):
 				link = attr['href']
 				if keylink in link:
 					keylink_id = link.index(spec_keylink)
-					link = link[keylink_id+3:]
+					other_param = link.index('&sa=')
+					link = unquote(link[keylink_id+3:other_param])
 			else:
 				self.links.append(None)
 				self.domains.append(None)

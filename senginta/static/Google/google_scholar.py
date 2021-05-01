@@ -2,6 +2,7 @@ from ..search import Search
 from .settings import GOOGLE_URLS
 
 from bs4 import BeautifulSoup
+from urllib.parse import unquote
 import re
 
 class GScholar(Search):
@@ -155,7 +156,7 @@ class GScholar(Search):
 		if self.links:
 			return self.links
 
-		res = [res.find('a')['href'] for res in self.get_main('h3', {'class': 'gs_rt'})]
+		res = [unquote(res.find('a')['href']) for res in self.get_main('h3', {'class': 'gs_rt'})]
 		self.links.extend(res)
 
 		return self.links
@@ -173,7 +174,7 @@ class GScholar(Search):
 		if self.pdf_links:
 			return self.pdf_links
 
-		self.pdf_links = [res.find('a')['href'] 
+		self.pdf_links = [unquote(res.find('a')['href'])
 						 if res 
 						 else None 
 						 for res in self.get_main('div', {'class': 'gs_or_ggsm'})]
