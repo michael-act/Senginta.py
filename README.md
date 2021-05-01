@@ -6,9 +6,13 @@
     All in one Search Engine Scrapper for used by API or Python Module.
 </p>
 
-| **`Documentation`**                                                       |
-| ------------------------------------------------------------------------- |
-| [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)]() |
+<p align="center">
+    <a href="https://youtu.be/-B3CO467Kzo"> How to use: Video</a>
+</p>
+
+**`Documentation`** |
+------------------- |
+[![Documentation](https://img.shields.io/badge/api-reference-blue.svg)]() |
 
 Senginta is All in one Search Engine Scrapper. With traditional scrapping,
 Senginta can be powerful to get result from any Search Engine, and convert
