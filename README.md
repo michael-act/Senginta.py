@@ -33,7 +33,7 @@ $ pip install senginta
 To update senginta to the latest version, add `--upgrade` flag to the above
 commands.
 
-#### *Try your first Senginta program*
+#### Try your first Senginta program
 
 ```shell
 $ python
