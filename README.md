@@ -56,6 +56,7 @@ Dictionary
 
 ## Resources
 
+*   https://www.naufalardhani.com/2021/05/senginta-all-in-one-search-engine.html
 *   Let's contribute your blog about this module here!
 
 ## License
