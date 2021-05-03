@@ -73,7 +73,7 @@ class BASearch(Search):
 		if self.titles:
 			return self.titles
 
-		res = [res.text 
+		res = [res.text
 			   if res 
 			   else None 
 			   for res in self.get_main('h3')]
@@ -92,7 +92,7 @@ class BASearch(Search):
 		if self.descs:
 			return self.descs
 
-		res = [res.text 
+		res = [res.text
 			   if res 
 			   else None 
 			   for res in self.get_main('div', {'class': lambda e: 'c-abstract' in str(e)})]
@@ -166,10 +166,11 @@ class BASearch(Search):
 		>>> print(search_wschool.get_all())
 		'''
 		
-		titles = self.get_title()
-		descs = self.get_desc()
-		authors, authors_link = self.get_authorNlink()
-		domains, links = self.get_domainNlink()
+		self.get_title()
+		self.get_desc()
+		self.get_authorNlink()
+		self.get_domainNlink()
 
-		return self.res_to_dict(BASearch.LABELS, titles, descs, 
-								authors, authors_link, domains, links)
+		return self.to_dict(BASearch.LABELS, self.titles, self.descs, 
+							self.authors, self.authors_link, self.domains, 
+							self.links)

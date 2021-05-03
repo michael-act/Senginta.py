@@ -12,23 +12,23 @@ from static.Google import GSearch, GNews, GBooks, GShop, GVideo, GScholar
 from static.Baidu import BASearch
 
 
-# GoogleSearch = GSearch('Tokopedia')
-# print(GoogleSearch.res_to_json())
+# GoogleSearch = GSearch('Tokopedia', 1, 3)
+# print(GoogleSearch.to_json())
 
 # GoogleBooks = GBooks('Python Programming', 1, 3)
-# print(GoogleBooks.res_to_json())
+# print(GoogleBooks.to_json())
 
 # GoogleNews = GNews('Idcloudhost', 1, 3) 
-# print(GoogleNews.res_to_json())
+# print(GoogleNews.to_json())
 
-# GoogleShops = GShop('Remote TV', 1, 3)
-# print(GoogleShops.res_to_json())
+# GoogleShops = GShop('Remote TV', 'Rp', 1, 3)
+# print(GoogleShops.to_json())
 
 # GoogleVideo = GVideo('Pegipegi', 1, 3)
-# print(GoogleVideo.res_to_json())
+# print(GoogleVideo.to_json())
 
 # BaiduSearch = BASearch('Gojek', 1, 3)
-# print(BaiduSearch.res_to_json())
+# print(BaiduSearch.to_json())
 
 
 ###################################################################################
@@ -40,5 +40,5 @@ from static.Baidu import BASearch
 #GScholar.URL += "ANOTHER_PARAMETER_TO_PASS_BOT_PROTECTOR"
 ###################################################################################
 
-# GoogleScholar = GScholar('Penggunaan Naive Bayes Classifier')
-# print(GoogleScholar.res_to_json())
+# GoogleScholar = GScholar('Penggunaan Naive Bayes Classifier', 1, 3)
+# print(GoogleScholar.to_json())

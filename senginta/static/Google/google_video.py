@@ -37,7 +37,10 @@ class GVideo(GSearch):
 		descs_tmp = self.get_main('div', {'class': lambda e: len(str(e).split()) == 3}, 
 								  findAll=True)
 
-		self.descs.extend([res[3].text if len(res) >= 4 else None for res in descs_tmp])
+		self.descs.extend([res[3].text 
+						   if len(res) >= 4 
+						   else None 
+						   for res in descs_tmp])
 		return self.descs
 
 
@@ -100,5 +103,5 @@ class GVideo(GSearch):
 
 		self.run_some_clean()
 
-		return self.res_to_dict(GVideo.LABELS, self.dates, self.titles, 
-								self.descs, self.durs, self.domains, self.links)
+		return self.to_dict(GVideo.LABELS, self.dates, self.titles, 
+							self.descs, self.durs, self.domains, self.links)

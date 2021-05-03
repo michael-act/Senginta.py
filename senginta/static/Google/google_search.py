@@ -76,7 +76,7 @@ class GSearch(Search):
 			if res:
 				title = res.find('h3')
 				if title:
-					self.titles.append(title.text)
+					self.titles.append('{}'.format(title.text))
 					continue
 			self.titles.append(None)
 
@@ -97,7 +97,10 @@ class GSearch(Search):
 		descs_tmp = self.get_main('div', {'class': lambda e: len(str(e).split()) == 3}, 
 								  findAll=True)
 
-		self.descs.extend([res[2].text if len(res) >= 3 else None for res in descs_tmp])
+		self.descs.extend([res[2].text 
+						   if len(res) >= 3 
+						   else None 
+						   for res in descs_tmp])
 		return self.descs
 
 
@@ -179,6 +182,6 @@ class GSearch(Search):
 
 		self.run_some_clean()
 
-		return self.res_to_dict(GSearch.LABELS, self.dates, self.titles, 
-								self.descs, self.domains, self.links)
+		return self.to_dict(GSearch.LABELS, self.dates, self.titles, 
+							self.descs, self.domains, self.links)
 		

@@ -267,6 +267,6 @@ class GScholar(Search):
 		domains = self.get_domain()
 		many_versions = self.get_many_version()
 
-		return self.res_to_dict(GScholar.LABELS, years, titles, descs, authors, 
-								links, pdf_links, journal_domains, domains, many_versions)
+		return self.to_dict(GScholar.LABELS, years, titles, descs, authors, 
+							links, pdf_links, journal_domains, domains, many_versions)
 

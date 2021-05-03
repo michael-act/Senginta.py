@@ -12,8 +12,9 @@ class GShop(Search):
 	URL = GOOGLE_URLS['GOOGLE_SHOP']
 	LABELS = ['title', 'price', 'e-commerce', 'src-link', 'img-link']
 
-	def __init__(self, search_word, start_page=1, max_page=1):
+	def __init__(self, search_word, currency, start_page=1, max_page=1):
 		super().__init__(search_word, start_page, max_page)
+		self.currency = currency
 		self.start_page_num = start_page * 10
 		self.max_page_num = max_page * 10
 		self.pages = self.get_result(GShop.URL, self.start_page_num, self.max_page_num)
@@ -84,7 +85,7 @@ class GShop(Search):
 			return self.prices
 
 		price_tmp = self.get_main('b', None)
-		self.prices.extend([p for p in price_tmp if 'Rp' in p])
+		self.prices.extend([p for p in price_tmp if self.currency in p])
 		return self.prices
 
 
@@ -147,5 +148,5 @@ class GShop(Search):
 		self.get_src_link()
 		self.get_img_link()
 
-		return self.res_to_dict(GShop.LABELS, self.titles, self.prices, 
-								self.e_commerces, self.src_links, self.img_links)
+		return self.to_dict(GShop.LABELS, self.titles, self.prices, 
+							self.e_commerces, self.src_links, self.img_links)
