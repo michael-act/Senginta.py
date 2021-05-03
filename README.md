@@ -62,3 +62,7 @@ Dictionary
 ## License
 
 [MIT License](LICENSE)
+
+## WARNING
+
+All intended of use, the responsibility rests with you. So, use wisely!
