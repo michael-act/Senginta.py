@@ -1,9 +1,9 @@
 #####################################################################################
 # If you use this module as installed with pip, use import method as below.
-#from Senginta.static.Google import GSearch, GNews, GBooks, GShop, GVideo, GScholar
-#from Senginta.static.Baidu import BASearch
+#from senginta.static.Google import GSearch, GNews, GBooks, GShop, GVideo, GScholar
+#from senginta.static.Baidu import BASearch
 # ------------------------------------ OR
-#from Senginta.static import Google, Baidu
+#from senginta.static import Google, Baidu
 # ------------------------------------
 #####################################################################################
 
